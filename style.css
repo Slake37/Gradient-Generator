@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(./pexels-anni-roenkae-2156881.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -12,17 +18,39 @@
     width:90%;
     height:90vh;
     margin: 2rem auto;
-    border:5px solid #000;
-    border-radius: 10px;
+
+    background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11.5px );
+-webkit-backdrop-filter: blur( 11.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .gradient-container{
     width:90%;
     height:50vh;
-    border:3px solid #000;
-    border-radius: 10px;
     margin-bottom:2rem;
+   
 }
+
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-css-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: rgb(36, 35, 35);
+}
+
 
 .hex-form{
     display: flex;
@@ -55,4 +83,16 @@ button{
 button:hover{
     background-color: #000;
     color:#fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+.error{
+    background-color: rgb(243, 12, 12);
+    color:#fff;
+    font-size: 1.2rem;
+    padding:0.2rem 0.5rem;
+    display: none;
 }

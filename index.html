@@ -10,13 +10,18 @@
 <body>
     <div class="container">
         <div class="gradient-container"></div>
+        <p class="error">Please enter a hex value for each color</p>
+        <div class="bottom">
+            
         <form action="" class="hex-form">
             <label for="firstHex">Enter Your First Hex</label>
-            <input type="text" name="firstHex" id="firstHex">
+            <input type="text" name="firstHex" id="firstHex" autocomplete="off">
             <label for="secondHex">Enter Your Second Hex</label>
-            <input type="text" name="secondHex" id="secondHex">
+            <input type="text" name="secondHex" id="secondHex" autocomplete="off">
             <button>Submit</button>
         </form>
+        <div class="gradient-css-code"></div>
+    </div>
     </div>
 
     <script src="script.js"></script>
